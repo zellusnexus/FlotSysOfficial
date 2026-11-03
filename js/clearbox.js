@@ -67,7 +67,7 @@ var	CB_Language='en';
 	}
 
 	if(!CB_Config){
-		var CB_Config='default';
+		var CB_Config='shadow';
 	}
 
 	document.write('<link rel="stylesheet" type="text/css" href="'+CB_ScriptDir+'/config/'+CB_Config+'/cb_style.css" />');
