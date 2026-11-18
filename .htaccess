@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Force HTTPS and the non-www host (canonical: https://aluminumboatdocks.com/)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://aluminumboatdocks.com/$1 [R=301,L]
+
+# Redirect any /index.html (root or subfolder) to its folder URL, e.g. /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ https://aluminumboatdocks.com/%1 [R=301,L,NC]
+
+DirectoryIndex index.html
