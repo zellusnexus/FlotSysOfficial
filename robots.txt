@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /testcontact/
+Disallow: /testdealer/
+Disallow: /testquick/
+Disallow: /testquote/
+
+Sitemap: https://aluminumboatdocks.com/sitemap.xml
